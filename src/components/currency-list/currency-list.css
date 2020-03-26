@@ -1,0 +1,25 @@
+.teste {
+    display: flex;
+    padding: 1rem;
+}
+
+.center {
+    margin: auto;
+    width: 30%;
+}
+
+.sentence {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column-img {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+}

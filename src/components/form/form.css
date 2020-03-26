@@ -1,0 +1,45 @@
+form {
+    margin: auto;
+    padding: 3rem;
+    position: relative;
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    background: rgba(255,255,255,.1);
+    border: 0;
+    border-radius: 4px;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    font-size: 15px;
+    outline: 0;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    background: rgba(255,255,255,.1);
+    border: 0;
+    /*border-radius: 40%;*/
+    background-color: #fff;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    font-size: 10px;
+    outline: 0;
+    padding: 6px;
+    position: absolute;
+    top: 40%;
+    right: 12%;
+}
