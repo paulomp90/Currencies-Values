@@ -10,11 +10,11 @@ class CurrencyList extends React.Component {
                         <div className="teste" key={elem.pair}>
                             <div className="column">
                                 {(this.props.amount > 0) ?
-                                    Math.round((elem.ask * this.props.amount)*100) / 100:
-                                    Math.round(elem.ask * 100) /100 }
+                                    Math.round((elem.ask * this.props.amount)*10000) / 10000:
+                                    Math.round(elem.ask * 10000) /10000 }
                             </div>
 
-                            <div className="column-img"><img src={`./assets/${elem.currency}.png`} alt={elem.currency} /></div>
+                            <div className="column-img"><img src={`assets/${elem.currency}.png`} alt={elem.currency} /></div>
                         </div>
                     ))}
                 </div>

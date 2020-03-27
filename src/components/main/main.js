@@ -32,7 +32,7 @@ class MainContainer extends React.Component {
 
     setAmount = debounce((newAmount) => {
         this.setState({amount: newAmount})
-    }, 1000);
+    }, 400);
 
     setCurrency = newCurrency => {
         this.setState({
@@ -57,6 +57,12 @@ class MainContainer extends React.Component {
                     amount={this.state.amount}
                     currencyList={this.state.currencyList}
                 />
+                {/* <div style={{
+                    backgroundImage: `url(assets/${this.state.simpleCurrencyList[5]}.png)`,
+                    height: '100px',
+                    width: '100px',
+                }}>
+                </div> */}
             </div>
         );
     }
