@@ -46,6 +46,8 @@ class MainContainer extends React.Component {
     render() {
         return (
             <div className="container">
+                <h2>Currency Converter</h2>
+                <h4>Receive a competitive and transparent pricing with no hidden spreads. See how we compare</h4>
                 <Form
                     setAmount={this.setAmount}
                     setCurrency={this.setCurrency}

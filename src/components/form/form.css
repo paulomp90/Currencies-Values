@@ -1,8 +1,8 @@
 form {
     margin: auto;
-    padding: 3rem;
+    padding: 2rem 1rem;
     position: relative;
-    width: 30%;
+    width: 60%;
 }
 
 input {
@@ -40,6 +40,6 @@ select {
     outline: 0;
     padding: 6px;
     position: absolute;
-    top: 40%;
-    right: 12%;
+    top: 36%;
+    right: 2%;
 }

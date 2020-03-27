@@ -8,16 +8,20 @@ class CurrencyList extends React.Component {
                 <div className="center">
                     {this.props.currencyList.map(elem => (
                         <div className="teste" key={elem.pair}>
-                            <div className="column">{(this.props.amount > 0) ? elem.ask * this.props.amount: elem.ask }</div>
-                            <div className="column-img"><img src={`./${elem.currency}.png`} alt={elem.currency} /></div>
-                            
+                            <div className="column">
+                                {(this.props.amount > 0) ?
+                                    Math.round((elem.ask * this.props.amount)*100) / 100:
+                                    Math.round(elem.ask * 100) /100 }
+                            </div>
+
+                            <div className="column-img"><img src={`./assets/${elem.currency}.png`} alt={elem.currency} /></div>
                         </div>
                     ))}
                 </div>
             );
         } else {
             return (
-                <div className="sentence">Enter an amount</div>
+                <div className="sentence">Enter an amount to check the rates</div>
             );
         }
     }

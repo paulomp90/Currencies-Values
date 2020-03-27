@@ -1,4 +1,15 @@
 .container {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    margin: auto;
+    color: #a9a9a9;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h2 {
+    color: #292929
 }
