@@ -7,14 +7,13 @@ class CurrencyList extends React.Component {
             return (
                 <div className="center">
                     {this.props.currencyList.map(elem => (
-                        <div className="teste" key={elem.pair}>
+                        <div className="currency-row" key={elem.pair}>
                             <div className="column">
                                 {(this.props.amount > 0) ?
                                     Math.round((elem.ask * this.props.amount)*10000) / 10000:
                                     Math.round(elem.ask * 10000) /10000 }
                             </div>
-
-                            <div className="column-img"><img src={`assets/${elem.currency}.png`} alt={elem.currency} /></div>
+                            <div className="column-currency">{elem.currency}</div>
                         </div>
                     ))}
                 </div>

@@ -5,7 +5,7 @@ import CurrencyList from "../currency-list/currency-list";
 import { debounce } from 'lodash';
 import { getCurrency } from "../../services/services";
 
-class MainContainer extends React.Component {
+class Main extends React.Component {
 
     constructor() {
         super();
@@ -57,14 +57,8 @@ class MainContainer extends React.Component {
                     amount={this.state.amount}
                     currencyList={this.state.currencyList}
                 />
-                {/* <div style={{
-                    backgroundImage: `url(assets/${this.state.simpleCurrencyList[5]}.png)`,
-                    height: '100px',
-                    width: '100px',
-                }}>
-                </div> */}
             </div>
         );
     }
 }
-export default MainContainer;
+export default Main;
